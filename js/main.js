@@ -30,4 +30,6 @@ $(function () {
 	showItem( element.bubble, 2800 );
 	// Show footer
 	showItem( element.footer, 2200 );
+
+	$(element.title, 'h3', 'h4', 'p').lettering('words');
 });
