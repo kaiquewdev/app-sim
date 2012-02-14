@@ -1,6 +1,20 @@
 // Main style
 
 @minH: 500px; // Minimum height of objects
+@colorTitle: #047ebe;
+@colorSubTitle: #52656e;
+
+.applyTypo(@family: 'Nixie One', @type: cursive) {
+	font-family: @family, @type;
+}
+
+*, p {
+	.applyTypo;
+}
+
+h3, h4 {
+	color: @colorSubTitle;
+}
 
 body {
 	width: 100%;
@@ -52,8 +66,10 @@ body {
 				text-align: center;
 				padding: 25px 0 0;
 				font-weight: 100;
-				font-size: 24px;
+				font-size: 22px;
 				letter-spacing: 5px;
+				text-shadow: 0 1px 0 #fff;
+				color: @colorTitle;
 			}
 		}
 	}
@@ -81,7 +97,7 @@ div.inner-left-menu {
 	nav {
 		header {
 			h4 {
-				padding: 0 15px 0;
+				text-align: center;
 			}
 		}
 	}

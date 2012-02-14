@@ -31,5 +31,6 @@ $(function () {
 	// Show footer
 	showItem( element.footer, 2200 );
 
+	//Lettering
 	$(element.title, 'h3', 'h4', 'p').lettering('words');
 });
