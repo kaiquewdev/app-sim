@@ -4,8 +4,30 @@
 @colorTitle: #047ebe;
 @colorSubTitle: #52656e;
 
+// Apply font family
 .applyTypo(@family: 'Nixie One', @type: cursive) {
 	font-family: @family, @type;
+}
+
+// Set padding for the left menu
+.padding-menu(@space: 10px 0 20px) {
+	padding: @space;
+}
+
+// Define the round for bubble
+.bubbleRound(@corner: 10px) {
+	border-radius: @corner;
+	-webkit-border-radius: @corner;
+	-moz-border-radius: @corner;
+	-o-border-radius: @corner;
+}
+
+// Define a shadow for the bubble
+.bubbleShadow(@shadowSets: 0 1px 2px, @shadowColor: #727272) {
+	box-shadow: @shadowSets @shadowColor;
+	-webkit-box-shadow: @shadowSets @shadowColor;
+	-moz-box-shadow: @shadowSets @shadowColor;
+	-o-box-shadow: @shadowSets @shadowColor;
 }
 
 *, p {
@@ -34,6 +56,10 @@ body {
 .left-menu {
 	float: left;
 	clear: right;
+}
+
+.to-left {
+	float: left;
 }
 
 .to-right {
@@ -84,11 +110,7 @@ body {
 	}
 }
 
-.padding-menu(@space: 10px 0 20px) {
-	padding: @space;
-}
-
-div.inner-left-menu {
+.inner-left-menu {
 	float: left;
 	display: block;
 	min-height: 500px;
@@ -122,20 +144,6 @@ div.inner-left-menu {
 			}
 		}
 	}
-}
-
-.bubbleRound(@corner: 10px) {
-	border-radius: @corner;
-	-webkit-border-radius: @corner;
-	-moz-border-radius: @corner;
-	-o-border-radius: @corner;
-}
-
-.bubbleShadow(@shadowSets: 0 1px 2px, @shadowColor: #727272) {
-	box-shadow: @shadowSets @shadowColor;
-	-webkit-box-shadow: @shadowSets @shadowColor;
-	-moz-box-shadow: @shadowSets @shadowColor;
-	-o-box-shadow: @shadowSets @shadowColor;
 }
 
 .bubble {
