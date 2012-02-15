@@ -5,8 +5,11 @@
  
 // Landscape phone to portrait tablet
 @media (max-width: 768px) {
+	body {
+		width: 760px !important;
+	}
+
 	.limit {
-		position: fixed;
 		width: 760px !important;
 		top: 0;
 		left: 0 !important;
@@ -39,14 +42,17 @@
 		float: none  !important;
 		display: block;
 		width: 100% !important;
-		min-height: 200px !important;
+		min-height: 100px !important;
 	}
 }
  
 // Portrait tablet to landscape and desktop
 @media (min-width: 768px) and (max-width: 980px) {
+	body {
+		width: 760px !important;
+	}
+
 	.limit {
-		position: fixed;
 		width: 760px !important;
 		top: 0;
 		left: 0 !important;
@@ -79,7 +85,7 @@
 		float: none  !important;
 		display: block;
 		width: 100% !important;
-		min-height: 200px !important;
+		min-height: 100px !important;
 	}
 }
  
